@@ -1,0 +1,66 @@
+<HTML>
+
+<HEAD>
+<TITLE>EX3</TITLE>
+<link rel="stylesheet" href="Stylesheet.css">
+</HEAD>
+
+<BODY>
+<center>
+<h1>Calculate the Area of a Triangle:</h1><br>
+<h1>input the lengths of three sides of a triangle and click the [Area of triangle] button.</h1><br>
+
+
+
+	
+	<table width="40%" height="20%" class="tableindex">
+	<caption class="blue"> Table for input </caption>
+		<tr>
+			<th><target="targetframe" class="fontindex">Length1</td>
+			<th>
+			<input id="Length1" type="number"  ></td>
+		</tr>
+		<tr>
+			<th><target="targetframe" class="fontindex">Length2</td>
+			<th>
+			<input id="Length2" type="number"  ></td>
+		</tr>
+		<tr>
+			<th><target="targetframe" class="fontindex">Length3</td>
+			<th>
+			<input id="Length3" type="number"  /></td>
+		</tr>
+</table>
+	<p><button onclick="Calc()">Area of triangle</button></p>
+
+</BODY>
+</center>
+<script>
+	var A;
+	var B;
+	var C;
+	var S;
+	var R
+	function Calc() 
+	{
+		var A = document.getElementById("Length1").number;
+		var B = document.getElementById("Length2").number;
+		var C = document.getElementById("Length3").number;
+		
+	if (Number(A)+Number(B)-Number(C)<=0)) {
+		window.alert ("invalid input!");
+	} 
+	 else {
+		S = (Number(A)+Number(B)+Number(C)*0.5)
+		R = Math.sqrt(Number(S)*(Number(S)-Number(A))*(Number(S)-Number(B))*Number(S)-Number(C)))
+		//window.alert(S)
+		window.alert("The area is "+R);
+	}
+
+
+</script>
+
+
+
+
+</HTML>
