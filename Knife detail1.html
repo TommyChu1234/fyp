@@ -48,5 +48,27 @@
 </TABLE>
 
 <iframe src="https://player.twitch.tv/?channel=hhhkkkgggyyyjjj&parent=tommychu1234.github.io" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
-</BODY>
-</HTML>�
+
+  <p>Calculate the mean time to failure (MTTF)</p>
+
+<form>
+    Total time(hour) : <input type="text" id="firstNumber" /><br>
+    Numbers of tool broken: <input type="text" id="secondNumber" /><br>
+    <input type="button" onClick="divideBy()" Value="calculate" />
+    </form>
+    <p>The tool life for one tool is (hour) : <br>
+    <span id = "result"></span>
+    </p>
+  
+  
+  </BODY>
+</HTML>
+  
+  <script>
+function divideBy() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("result").innerHTML = num1 / num2;
+}
+</script>
